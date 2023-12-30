@@ -1,5 +1,5 @@
 {
-  "name": "uni-hooks",
+  "name": "my-hooks",
   "version": "0.0.1",
   "description": "React 业务 Hooks",
   "main": "./cjs/index.js",

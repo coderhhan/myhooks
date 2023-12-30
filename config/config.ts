@@ -21,8 +21,8 @@ export default {
   ],
   title: 'uni hooks',
   mode: 'site', //站点模式 doc左右分布 或者上下分布site
-  favicon: '/uni-hooks/avatar.png',
-  logo: '/uni-hooks/avatar.png',
+  favicon: '/uni-hooks/logo.png',
+  logo: '/uni-hooks/logo.png',
   dynamicImport: {},
   manifest: {},
   hash: true,

@@ -10,6 +10,9 @@
     "dev":"dumi dev",
     "test":"jest",
     "build":"pnpm -r --filter=./packages/hooks run build",
+    "build:doc":"dumi build",
+    "pub": "pnpm run build && pnpm -r --filter=./packages/hooks publish",
+    "pub:beta": "pnpm run build && pnpm -r --filter=./packages/hooks publish --tag beat",
     "encode-fe-lint-scan": "encode-fe-lint scan",
     "encode-fe-lint-fix": "encode-fe-lint fix"
   },
