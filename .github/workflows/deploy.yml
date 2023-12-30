@@ -33,3 +33,10 @@ jobs:
           BRANCH: gh-pages
           FOLDER: dist
           ACCESS_TOKEN: ${{secrets.ACCESS_TOKEN}}
+      
+      - name: publish to npm #推送到npm上
+        run: |
+          npm config set //registry.npmjs.org/:_authToken=$NPM_ACCESS_TOKEN
+          npm publish
+        env:
+          NPM_ACCESS_TOKEN: ${{ secretes.NPM_ACCESS_TOKEN }}       
