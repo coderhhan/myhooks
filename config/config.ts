@@ -7,7 +7,7 @@ export default {
     type: 'none',
     exclude: [],
   },
-  publicPath: '/uni-hooks/',
+  publicPath: '/',
   history: { type: 'hash' },
   extraBabelPlugins: [//demo组件库 使用按需加载
     [
@@ -21,8 +21,8 @@ export default {
   ],
   title: 'uni hooks',
   mode: 'site', //站点模式 doc左右分布 或者上下分布site
-  favicon: '/uni-hooks/logo.png',
-  logo: '/uni-hooks/logo.png',
+  favicon: '/logo.png',
+  logo: '/logo.png',
   dynamicImport: {},
   manifest: {},
   hash: true,
@@ -44,7 +44,7 @@ export default {
   navs: [
     { title: '指南', path: '/guide' },
     { title: 'Hooks', path: '/hooks' },
-    { title: 'GitHub', path: 'xxx' },
+    // { title: 'GitHub', path: 'xxx' },
   ],
   menus: {
     '/': [
