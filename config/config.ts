@@ -7,7 +7,7 @@ export default {
     type: 'none',
     exclude: [],
   },
-  publicPath: '/encode-hooks/',
+  publicPath: '/myhooks/',
   history: { type: 'hash' },
   extraBabelPlugins: [//demo组件库 使用按需加载
     [
@@ -21,8 +21,8 @@ export default {
   ],
   title: 'uni hooks',
   mode: 'site', //站点模式 doc左右分布 或者上下分布site
-  favicon: '/encode-hooks/logo.png',
-  logo: '/encode-hooks/logo.png',
+  favicon: '/myhooks/logo.png',
+  logo: '/myhooks/logo.png',
   dynamicImport: {},
   manifest: {},
   hash: true,
