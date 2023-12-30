@@ -3,6 +3,9 @@
   "private": false,
   "version": "0.0.1",
   "description": "",
+  "files": [
+    "dist"
+  ],
   "scripts": {
     "preinstall": "npx only-allow pnpm",
     "prepare":"husky install",
