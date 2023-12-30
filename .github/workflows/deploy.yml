@@ -9,7 +9,7 @@ jobs:
     runs-on: ubuntu-latest
     permissions:
       contents: write      
-    steps:
+    setps:
       ## 迁出代码
       - name: checkout  
         uses: actions/checkou@v2.3.1
