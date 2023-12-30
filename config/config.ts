@@ -7,7 +7,7 @@ export default {
     type: 'none',
     exclude: [],
   },
-  publicPath: '/',
+  publicPath: '/encode-hooks/',
   history: { type: 'hash' },
   extraBabelPlugins: [//demo组件库 使用按需加载
     [
@@ -21,14 +21,14 @@ export default {
   ],
   title: 'uni hooks',
   mode: 'site', //站点模式 doc左右分布 或者上下分布site
-  favicon: '/logo.png',
-  logo: '/logo.png',
+  favicon: '/encode-hooks/logo.png',
+  logo: '/encode-hooks/logo.png',
   dynamicImport: {},
   manifest: {},
   hash: true,
   alias: {
-    uniHooks: process.cwd() + '/packages/hooks/src/index.ts',
-    ['uni-hooks']: process.cwd() + '/packages/hooks/src/index.ts',
+    encodeHooks: process.cwd() + '/packages/hooks/src/index.ts',
+    ['encode-hooks']: process.cwd() + '/packages/hooks/src/index.ts',
     //demo引用时从这里引入import { useLatest } from 'uni-hooks';
   },
   resolve: {

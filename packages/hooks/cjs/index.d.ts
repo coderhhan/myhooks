@@ -1,3 +1,4 @@
 import useUnmount from './useUnmount';
 import useLatest from './useLatest';
-export { useUnmount, useLatest };
+import useToggle from './useToggle';
+export { useUnmount, useLatest, useToggle };

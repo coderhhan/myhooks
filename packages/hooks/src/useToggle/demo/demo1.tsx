@@ -3,7 +3,7 @@
  * desc: 当没有设置默认值时,默认使用true\false切换
  */
 import React from 'react'
-import { useToggle } from 'uni-hooks'
+import { useToggle } from 'encode-hooks'
 
 export default () =>{
   const [state,{toggle,setLeft,setRight} ] = useToggle()
