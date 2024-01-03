@@ -3,7 +3,7 @@
  * desc: 在组件卸载时，执行函数。
  */
 
-//222import { useBoolean, useUnmount } from 'uni-hooks';
+// 222import { useBoolean, useUnmount } from 'uni-hooks';
 import { message } from 'antd';
 import React from 'react';
 
@@ -23,7 +23,8 @@ export default () => {
       {/* <button type="button" onClick={toggle}>
         {state ? 'unmount' : 'mount'}
       </button>
-      {state && <MyComponent />} */}111
+      {state && <MyComponent />} */}
+      111
     </>
   );
 };

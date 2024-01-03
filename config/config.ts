@@ -1,6 +1,6 @@
 import { menus } from './menus';
 
-//dumi默认消费
+// dumi默认消费
 export default {
   exportStatic: {},
   nodeModulesTransform: {
@@ -9,27 +9,28 @@ export default {
   },
   publicPath: '/myhooks/',
   history: { type: 'hash' },
-  extraBabelPlugins: [//demo组件库 使用按需加载
+  extraBabelPlugins: [
+    // demo组件库 使用按需加载
     [
       'babel-plugin-import',
       {
         libraryName: '@alifd/next',
         style: false,
       },
-      'fusion', //ui 组件库
+      'fusion', // ui 组件库
     ],
   ],
   title: 'uni hooks',
-  mode: 'site', //站点模式 doc左右分布 或者上下分布site
+  mode: 'site', // 站点模式 doc左右分布 或者上下分布site
   favicon: '/myhooks/logo.png',
   logo: '/myhooks/logo.png',
   dynamicImport: {},
   manifest: {},
   hash: true,
   alias: {
-    encodeHooks: process.cwd() + '/packages/hooks/src/index.ts',
-    ['encode-hooks']: process.cwd() + '/packages/hooks/src/index.ts',
-    //demo引用时从这里引入import { useLatest } from 'uni-hooks';
+    uniHooks: `${process.cwd()}/packages/hooks/src/index.ts`,
+    'uni-hooks': `${process.cwd()}/packages/hooks/src/index.ts`,
+    // demo引用时从这里引入import { useLatest } from 'uni-hooks';
   },
   resolve: {
     includes: ['docs', 'packages/hooks/src'],
