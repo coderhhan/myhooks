@@ -19,7 +19,7 @@ const { data, error, loading } = useRequest(service);
 
 <br />
 
-<code src="./demo/default.tsx" />
+<!-- <code src="./demo/default.tsx" /> -->
 
 ## 手动触发
 

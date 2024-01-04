@@ -12,7 +12,7 @@ class Fetch<Tdata, Tparams extends any[]> {
   };
   constructor(
     public serviceRef: MutableRefObject<Service<Tdata, Tparams>>,
-    public options: Options<Tdata, Tparams>,
+    public options: Options<Tdata, Tparams>, // publick 相当于 声明了 options，可以 this.options获取存进来的参数
     public update: () => void, // public initState: Partial<FetchState<TData, TParams>> = {},
   ) {
     this.state = {
@@ -49,7 +49,8 @@ class Fetch<Tdata, Tparams extends any[]> {
         error: undefined,
         loading: false,
       });
-
+      console.log(this);
+      this.options.onSuccess?.(res, params);
       return res;
     } catch (error) {
       if (currentCount !== this.count) {
