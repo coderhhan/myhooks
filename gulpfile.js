@@ -16,7 +16,7 @@ gulp.task('clean', async ()=>{
 //cjs产物 commojs
 gulp.task('cjs',()=>{
  return gulp
-  .src(['./es/**/*.js']) //输入文件
+  .src(['./es/**/*.js']) //输入文件  创建一个读取流读取文件
   .pipe(
     babel({  //babel根据.babelrc文件进行转换
       configFile:'../../.babelrc'
